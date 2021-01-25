@@ -1,0 +1,1 @@
+/home/ethan/dotfiles/vim/ftplugin/scss.vim

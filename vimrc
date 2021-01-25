@@ -53,13 +53,39 @@ function FileSize()
     endif
     
     if bytes < 1024
-        return "[" . bytes . "B]
+        return "[" . bytes . "B]"
     elseif bytes < 1048576
         return "[" . (bytes / 1024) . "KB]"
     else
         return "[" . (bytes / 1048576) . "MB]"
     endif
 endfunction
+
+
+"""""" Vimplug """"""
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/my_dotfile/vim/.vim/plugged')
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+call plug#end()
+
+"" NERDTree """
+" Ctrl-T to toggle NERDTree
+nnoremap <C-t> :NERDTreeToggle<CR>
+" close NERDTree when NERDTree is the last window
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+
+
+
+
+
 
 
 
