@@ -1,4 +1,4 @@
-# My .vimrc file
+# My .vimrc
 
 ### TODO:
 1. update vimplug
