@@ -7,7 +7,9 @@ set number             " show line numbers
 set relativenumber
 set mouse=a            " enable mouse
 set t_Co=256           " set color
-colorscheme torte
+" colorscheme evening
+" colorscheme torte
+colorscheme delek
 
 highlight CursorLine cterm=underline
 set cursorcolumn
@@ -60,6 +62,27 @@ function FileSize()
         return "[" . (bytes / 1048576) . "MB]"
     endif
 endfunction
+
+
+"""""" mapping """"""
+let mapleader = " "
+
+" nnoremap = Normal mode, NO REcursion, MAPping
+nnoremap <leader>ev :vsplit $MYVIMRC<ENTER>
+nnoremap <leader>sv :source $MYVIMRC<ENTER>
+
+nnoremap <leader>"  viw<ESC>a"<ESC>bi"<ESC>lel
+nnoremap <leader>(  viw<ESC>a)<ESC>bi(<ESC>lel
+
+" inoremap = Insert mode, NO REcursion, MAPping
+inoremap jj <ESC>:wq
+
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap " ""<ESC>i
+inoremap ' ''<ESC>i
+inoremap {<ENTER> {<ENTER>}<ESC>O<TAB>
 
 
 """""" Vimplug """"""
