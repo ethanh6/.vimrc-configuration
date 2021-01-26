@@ -36,6 +36,10 @@ ln -s ~/my_dotfile/vim/vimrc ~/.vimrc
 # On Mac
 control on Mac == Ctrl on Windows
 
+# dotfile location management
+- vimrc and readme: `~/.vimrc -> ~/my_dotfile/vim/vimrc`
+- plugins: `~/.vim`
+
 
 # Source
 - [Learn vimscript](https://learnvimscriptthehardway.stevelosh.com)
