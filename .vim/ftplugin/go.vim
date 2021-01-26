@@ -1,1 +1,0 @@
-/home/ethan/dotfiles/vim/ftplugin/go.vim

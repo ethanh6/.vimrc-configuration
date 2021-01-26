@@ -92,15 +92,18 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/my_dotfile/vim/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
 "" NERDTree """
+
 " Ctrl-T to toggle NERDTree
 nnoremap <C-t> :NERDTreeToggle<CR>
+
 " close NERDTree when NERDTree is the last window
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
