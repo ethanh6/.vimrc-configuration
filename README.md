@@ -25,7 +25,7 @@ ln -s ~/my_dotfile/vim/vimrc ~/.vimrc
 
 <br>
 
-## Sinple Auto complete
+# Simple Auto complete
 (), [], {}, single quote ('), double quote (")
 
 
