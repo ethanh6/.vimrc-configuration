@@ -1,8 +1,5 @@
 # My .vimrc
 
-### TODO:
-1. update vimplug
-
 # To use:
 ```sh
 cd 
@@ -11,6 +8,9 @@ ln -s ~/my_dotfile/vim/vimrc ~/.vimrc
 ```
 
 > Make the symlink (.vimrc) in home dir link to actual file `~/my_dotfile/vim/vimrc`, then git could be used.
+
+# TODO:
+1. Try vundle?
 
 # Hot Keys
 
@@ -36,7 +36,7 @@ ln -s ~/my_dotfile/vim/vimrc ~/.vimrc
 # On Mac
 control on Mac == Ctrl on Windows
 
-# dotfile location management
+# Dotfile management
 - vimrc and readme: `~/.vimrc -> ~/my_dotfile/vim/vimrc`
 - plugins: `~/.vim`
 

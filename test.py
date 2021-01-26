@@ -1,5 +1,3 @@
-import math
-
 def main():
 
     todo = ["update surround", "update with YCM", "and others"]
@@ -8,7 +6,6 @@ def main():
         print(i)
 
 main()
-
 
 
 # asdf asdf aswdfasdfa asd <p>asdf</p> asdf asdfasdfa asd
