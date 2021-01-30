@@ -26,8 +26,8 @@ ln -s ~/my_dotfile/vim/vimrc ~/.vimrc
 | jj | Insert | Quit insert mode and save|
 | [space]" | Normal | Surround word with ""|
 | [space]( | Normal | Surround word with ()|
-| cs[old srd][new srd]| Normal | Change surround | [surround.vim](https://vimawesome.com/plugin/surround-vim) 
-| ds[old srd][new srd]| Normal | Delete the word with ()|
+| cs[old srd][new srd]| Normal | Change surround | [surround.vim](https://vimawesome.com/plugin/surround-vim) |
+| ds[old srd][new srd]| Normal | Delete the word with ()| [surround.vim](https://vimawesome.com/plugin/surround-vim) |
 
 <br>
 
