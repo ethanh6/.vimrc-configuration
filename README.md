@@ -21,21 +21,14 @@ ln -s ~/my_dotfile/vim/vimrc ~/.vimrc
 | Key comb | In mode |  Effect | Plugin |
 |-------   | ------ | ------ | --- |
 | Ctrl - t | Normal | Toggle NERDTree | [NERDTree](https://vimawesome.com/plugin/nerdtree-red)
-| [space]ev | Normal | Edit vimrc|
-| [space]sv | Normal | Source vimrc|
-| jj | Insert | Quit insert mode and save|
 | [space]" | Normal | Surround word with ""|
 | [space]( | Normal | Surround word with ()|
 | cs[old srd][new srd]| Normal | Change surround | [surround.vim](https://vimawesome.com/plugin/surround-vim) |
 | ds[old srd][new srd]| Normal | Delete the word with ()| [surround.vim](https://vimawesome.com/plugin/surround-vim) |
+| H | Normal | Toggle Cursor highlighting ||
 
 <br>
 
-# Simple Auto complete
-(), [], {}, single quote ('), double quote (")
-
-
-<br>
 
 # On Mac
 control on Mac == Ctrl on Windows
@@ -48,3 +41,4 @@ control on Mac == Ctrl on Windows
 # Source
 - [Learn vimscript](https://learnvimscriptthehardway.stevelosh.com)
 - [Vim Awesome](https://vimawesome.com)
+- [Vim documentation](:help whatever)

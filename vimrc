@@ -12,6 +12,7 @@ set ruler
 colorscheme slate
 set cursorline cursorcolumn
 hi CursorLine cterm=NONE ctermbg=darkgray ctermfg=white
+
 " toggle cursorline
 nnoremap H :set cursorline! cursorcolumn!<CR>
 
